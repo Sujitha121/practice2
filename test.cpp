@@ -7,3 +7,5 @@ using namespace std;
 double calculateArea(double radius) {
     return PI * radius * radius;
 }
+double calculateCircumference(double radius) {
+    return 2 * PI * radius;
