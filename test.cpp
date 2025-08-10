@@ -40,4 +40,26 @@ do {
 
         cout << "Enter the radius of the circle: ";
         cin >> radius;
+ if (cin.fail() || radius <= 0) {
+            cout << "Invalid radius! Please enter a positive number.\n";
+            clearInput();
+            continue;
+        }
 
+        switch (choice) {
+            case 1:
+                cout << "Area of the circle: " << calculateArea(radius) << endl;
+                break;
+            case 2:
+                cout << "Circumference of the circle: " << calculateCircumference(radius) << endl;
+                break;
+            case 3:
+                cout << "Area of the circle: " << calculateArea(radius) << endl;
+                cout << "Circumference of the circle: " << calculateCircumference(radius) << endl;
+                break;
+        }
+
+    } while (true);
+
+    return 0;
+}
