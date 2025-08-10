@@ -4,3 +4,6 @@
 #define PI 3.14159
 
 using namespace std;
+double calculateArea(double radius) {
+    return PI * radius * radius;
+}
